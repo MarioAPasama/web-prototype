@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewa Mobil Jogja - Drentcarjogja</title>
+    <meta name="description" content="Sewa mobil terpercaya di Jogja. Lokasi Suryodiningratan. Hubungi Drentcarjogja 081244593355.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#3b82f6',
+                            DEFAULT: '#1d4ed8',
+                            dark: '#1e3a8a',
+                            accent: '#f59e0b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent text-white py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold flex items-center gap-2">
+                <i class="fa-solid fa-car-side text-brand-accent"></i>
+                Drentcarjogja
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-brand-accent transition">Beranda</a>
+                <a href="#about" class="hover:text-brand-accent transition">Tentang</a>
+                <a href="#armada" class="hover:text-brand-accent transition">Armada</a>
+                <a href="#contact" class="hover:text-brand-accent transition">Kontak</a>
+            </div>
+
+            <!-- Mobile Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white text-gray-800 absolute w-full left-0 top-full shadow-lg">
+            <div class="flex flex-col p-4 space-y-4 font-medium">
+                <a href="#home" class="hover:text-brand block">Beranda</a>
+                <a href="#about" class="hover:text-brand block">Tentang</a>
+                <a href="#armada" class="hover:text-brand block">Armada</a>
+                <a href="#contact" class="hover:text-brand block">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-screen flex items-center justify-center text-center px-4 relative">
+        <div class="max-w-4xl mx-auto text-white" data-aos="fade-up">
+            <span class="bg-brand-accent text-gray-900 px-3 py-1 rounded-full text-sm font-bold uppercase tracking-wide mb-4 inline-block">Sewa Mobil Jogja Terpercaya</span>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Jelajahi Keindahan Yogyakarta Bersama Kami</h1>
+            <p class="text-lg md:text-xl mb-8 text-gray-200">Layanan sewa mobil terbaik di Suryodiningratan & Mantrijeron. Unit bersih, nyaman, dan harga bersahabat.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="https://wa.me/6281244593355?text=Halo%20Drentcarjogja,%20saya%20ingin%20tanya%20sewa%20mobil." class="bg-brand-accent hover:bg-yellow-400 text-gray-900 font-bold py-3 px-8 rounded-full transition transform hover:scale-105 shadow-lg flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> Pesan Sekarang
+                </a>
+                <a href="#armada" class="bg-transparent border-2 border-white hover:bg-white hover:text-brand-dark text-white font-bold py-3 px-8 rounded-full transition flex items-center justify-center">
+                    Lihat Armada
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-10 animate-bounce text-white">
+            <i class="fa-solid fa-chevron-down text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- Features / About -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Kenapa Memilih <span class="text-brand">Drentcarjogja?</span></h2>
+                <div class="w-20 h-1 bg-brand-accent mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-gray-50 p-8 rounded-2xl text-center hover:shadow-xl transition border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-100 text-brand rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Lokasi Strategis</h3>
+                    <p class="text-gray-600">Terletak di jantung kota, Suryodiningratan. Mudah dijangkau dan siap mengantar ke seluruh destinasi wisata Jogja.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-gray-50 p-8 rounded-2xl text-center hover:shadow-xl transition border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-100 text-brand rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fa-solid fa-car"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Unit Terawat</h3>
+                    <p class="text-gray-600">Armada kami selalu dalam kondisi prima, bersih, dan wangi demi kenyamanan perjalanan Anda.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-gray-50 p-8 rounded-2xl text-center hover:shadow-xl transition border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-100 text-brand rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Layanan Ramah</h3>
+                    <p class="text-gray-600">Pelayanan admin yang responsif dan driver yang sopan serta hafal jalanan Yogyakarta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Armada Section -->
+    <section id="armada" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Pilihan Armada Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Tersedia berbagai jenis kendaraan untuk kebutuhan liburan keluarga, perjalanan bisnis, atau wisuda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Car Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-2 transition duration-300">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden group">
+                        <!-- Placeholder Image -->
+                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800" alt="City Car" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-brand-accent text-xs font-bold px-3 py-1 rounded text-gray-900">POPULER</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">City Car (Agya/Brio)</h3>
+                        <p class="text-gray-500 text-sm mb-4">Cocok untuk pasangan atau grup kecil 4 orang.</p>
+                        <div class="flex items-center gap-4 text-sm text-gray-600 mb-6">
+                            <span><i class="fa-solid fa-user-group text-brand"></i> 4 Kursi</span>
+                            <span><i class="fa-solid fa-suitcase text-brand"></i> 2 Bagasi</span>
+                            <span><i class="fa-solid fa-gears text-brand"></i> Auto/Manual</span>
+                        </div>
+                        <a href="https://wa.me/6281244593355?text=Saya%20tertarik%20sewa%20City%20Car" class="block w-full text-center bg-brand text-white font-semibold py-2 rounded-lg hover:bg-brand-dark transition">
+                            Tanya Harga
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Car Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-2 transition duration-300">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1619682817481-e994891cd1f5?auto=format&fit=crop&q=80&w=800" alt="MPV" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Grand Avanza / Xenia</h3>
+                        <p class="text-gray-500 text-sm mb-4">Pilihan keluarga paling nyaman dan irit.</p>
+                        <div class="flex items-center gap-4 text-sm text-gray-600 mb-6">
+                            <span><i class="fa-solid fa-user-group text-brand"></i> 7 Kursi</span>
+                            <span><i class="fa-solid fa-suitcase text-brand"></i> 3 Bagasi</span>
+                            <span><i class="fa-solid fa-snowflake text-brand"></i> Double Blower</span>
+                        </div>
+                        <a href="https://wa.me/6281244593355?text=Saya%20tertarik%20sewa%20Avanza" class="block w-full text-center bg-brand text-white font-semibold py-2 rounded-lg hover:bg-brand-dark transition">
+                            Tanya Harga
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Car Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-2 transition duration-300">
+                    <div class="h-48 bg-gray-200 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&q=80&w=800" alt="Premium MPV" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Innova Reborn</h3>
+                        <p class="text-gray-500 text-sm mb-4">Kenyamanan ekstra untuk perjalanan jauh.</p>
+                        <div class="flex items-center gap-4 text-sm text-gray-600 mb-6">
+                            <span><i class="fa-solid fa-user-group text-brand"></i> 7 Kursi</span>
+                            <span><i class="fa-solid fa-star text-brand"></i> Premium</span>
+                            <span><i class="fa-solid fa-gauge-high text-brand"></i> Diesel</span>
+                        </div>
+                        <a href="https://wa.me/6281244593355?text=Saya%20tertarik%20sewa%20Innova%20Reborn" class="block w-full text-center bg-brand text-white font-semibold py-2 rounded-lg hover:bg-brand-dark transition">
+                            Tanya Harga
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-4">Butuh Hiace atau Elf untuk rombongan?</p>
+                <a href="https://wa.me/6281244593355" class="inline-flex items-center text-brand font-bold hover:underline">
+                    Hubungi kami untuk ketersediaan <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section id="contact" class="py-20 bg-white relative">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-12 bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+                
+                <!-- Contact Info -->
+                <div class="lg:w-1/2 p-8 md:p-12 bg-brand text-white flex flex-col justify-center">
+                    <h2 class="text-3xl font-bold mb-6">Hubungi Kami</h2>
+                    <p class="mb-8 text-blue-100">Siap melayani kebutuhan transportasi Anda di Yogyakarta 24 Jam.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-brand-dark flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-location-dot text-brand-accent"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Alamat</h4>
+                                <p class="text-blue-100 text-sm leading-relaxed">
+                                    Jl. Suryodiningratan No.16,<br>
+                                    Suryodiningratan, Kec. Mantrijeron,<br>
+                                    Kota Yogyakarta, DIY 55141
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-brand-dark flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-phone text-brand-accent"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Telepon / WhatsApp</h4>
+                                <p class="text-blue-100 text-xl font-mono">0812-4459-3355</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-brand-dark flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-map-pin text-brand-accent"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Plus Code</h4>
+                                <p class="text-blue-100 font-mono">59J6+V9 Suryodiningratan</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10">
+                        <a href="https://www.google.com/maps/place/Sewa+mobil+jogja+drentcarjogja/@-7.8213058,110.3463409,15z/data=!4m10!1m2!2m1!1ssewa+mobil!3m6!1s0x2e7a574739aad22f:0x8f9302319d45628c!8m2!3d-7.8178699!4d110.3608796!15sCgpzZXdhIG1vYmlsWgwiCnNld2EgbW9iaWySARFjYXJfcmVudGFsX2FnZW5jeZoBJENoZERTVWhOTUc5blMwVk5WMmRmY0ZoVU5uUnRUM3AzUlJBQuABAPoBBAhiEBU!16s%2Fg%2F11vjwbfykl?entry=ttu&g_ep=EgoyMDI2MDExMS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D" 
+                           target="_blank" 
+                           class="inline-block bg-white text-brand font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition shadow-lg w-full text-center">
+                            <i class="fa-solid fa-map-location-dot mr-2"></i> Buka di Google Maps
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Map Visualization (Static / Embed Placeholder) -->
+                <div class="lg:w-1/2 min-h-[300px] bg-gray-200 relative">
+                     <!-- Using an iframe wrapper for responsiveness -->
+                     <iframe 
+                        src="https://maps.google.com/maps?q=-7.8178699,110.3608796&z=15&output=embed" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; min-height: 400px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-2 font-semibold">Sewa mobil jogja drentcarjogja</p>
+            <p class="text-gray-500 text-sm">&copy; 2024 Drentcarjogja. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WA Button -->
+    <a href="https://wa.me/6281244593355?text=Halo%20Admin,%20mau%20info%20sewa%20mobil." 
+       class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl z-50 flex items-center justify-center transition hover:scale-110 animate-pulse group">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="absolute right-full mr-4 bg-white text-gray-800 px-3 py-1 rounded-lg text-sm font-bold shadow-lg opacity-0 group-hover:opacity-100 transition whitespace-nowrap hidden md:block">
+            Chat WhatsApp
+        </span>
+    </a>
+
+    <!-- Scripts -->
+    <script>
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.remove('bg-transparent', 'text-white', 'py-4');
+                navbar.classList.add('bg-white', 'text-gray-900', 'shadow-md', 'py-2');
+            } else {
+                navbar.classList.add('bg-transparent', 'text-white', 'py-4');
+                navbar.classList.remove('bg-white', 'text-gray-900', 'shadow-md', 'py-2');
+            }
+        });
+
+        // Mobile Menu Toggle
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            
+            // Change navbar style when menu is open for visibility
+            if (!mobileMenu.classList.contains('hidden')) {
+                navbar.classList.add('bg-white', 'text-gray-900');
+                navbar.classList.remove('bg-transparent', 'text-white');
+            } else if (window.scrollY <= 50) {
+                navbar.classList.remove('bg-white', 'text-gray-900');
+                navbar.classList.add('bg-transparent', 'text-white');
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
